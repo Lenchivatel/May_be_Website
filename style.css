@@ -5,15 +5,64 @@
     padding: 0;
 }
 
+a {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+
+nav div {
+    top: 10px;
+    right: 10px;
+    height: 8%;
+    width: auto; 
+    position: absolute;
+    
+}
+
+nav div ul {
+    text-align: center;
+    
+}
+
+nav div ul li {
+    display: inline-block;
+    margin-top: 2vw;
+    margin-left: 10px;
+}
+
+nav div ul li a {
+    color: #fff
+    
+}
+
+nav div ul li.btn  {
+    
+}
+
+nav div ul li.btn a {
+    padding: 0.7em;
+    background: #fa9021;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+nav div ul li.btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 500ms ease;
+}
+
+nav div ul li.btn a:hover {
+background: #a02604;
+}
+
 Body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #fff;
     font-size: 18px;
-}
-
-a {
-    text-decoration: none;
+    background: linear-gradient(180deg,rgb(0, 0, 0) 0%, rgb(63, 10, 10) 40%, rgb(0, 0, 0) 90%);
 }
 
 #IM {
@@ -30,12 +79,9 @@ a {
     transition-timing-function: ease-in;
 }
 
-
-
-.foto_SGT_posit {
-    margin: 50px;
-    display: block;
-    width: 100%;
+.foto_block {
+    width: auto;
+    height: auto;
 }
 
 #foto_surgut:hover  {
@@ -46,7 +92,7 @@ a {
 
 #foto_surgut {
     border-radius: 600px;
-    width: 700px;
+    width: 40vw;
     position: relative;
     float: left;
     top: 100px;
@@ -56,10 +102,10 @@ a {
 
 .foto_sgt {
     border-radius: 600px;
-    width: 400px;
+    width: 23vw;
     position: relative;
-    padding: 30px;
-    
+    margin: 1vw;
+    top: 20px;
 }
 
 .foto_sgt:hover  {
@@ -68,18 +114,21 @@ a {
     z-index: 1;
 }
 
-body {
-    background: linear-gradient(180deg,rgb(0, 0, 0) 0%, rgb(63, 10, 10) 40%, rgb(0, 0, 0) 90%);
-    padding-bottom: 150px;
-}
-
-.container {
-    width: 1400px;
-    margin: 0 auto;
-}
 
 header {
     padding: 52px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero {
+    width: 90%;
+    margin: 0 auto;
 }
 
 header .logo {
@@ -88,93 +137,11 @@ header .logo {
     font-weight: 800;
 }
 
-header nav {
-    float: right;
-    width: 50%;
-    position: fixed;
-    right: 30px;
-    z-index: 3;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    z-index: 2;
-    position: relative;
-}
-
-header nav ul li {
-    display: inline-block;
-}
-
-header nav ul li a {
-    color: #fff
-}
-
-
-header {
-    padding: 50px 0;
-}
-
-header .logo {
-    text-transform: uppercase;
-    font-size: 35px;
-    font-weight: 800;
-    margin: 30px;
-}
-
 header .logo:hover  {
     color: #fa9021;
     border-bottom: 1px solid #fa9021;
     transition: all 600ms ease;
     cursor: pointer;
-}
-
-header nav {
-    float: right;
-    width: 30%;
-    
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1;
-    position: relative;
-    top: -60px ;
-}
-
-header nav ul li {
-    display: inline-block;
-}
-
-header nav ul li a {
-    color: #fff
-}
-
-header nav ul li.btn a {
-    background: #fa9021;
-    padding: 9px 17px;
-    border-radius: 5px;
-    transition: all 500ms ease;
-}
-
-header nav ul li.btn:hover{
-        cursor: pointer;
-        transform: scale(1.2);
-        transition: all 500ms ease;
-        cursor: pointer;
-}
-
-header nav ul li.btn a:hover {
-    background: #a02604;
-}
-
-.head {
-    float: right;
-    width: 80%;
 }
 
 .minitext {
@@ -195,5 +162,14 @@ header nav ul li.btn a:hover {
 
 .contactsss img {
     width: 100px;
+    
+}
+
+
+@media (max-width: 1440px) {
+
+    nav div ul li.btn a {
+        padding: 0.5em;
+    }
     
 }
