@@ -232,6 +232,6 @@ header .logo:hover  {
     }
 
     header {
-        height: 10px;
+        height: 10vw;
     }
 }
