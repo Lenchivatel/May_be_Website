@@ -173,3 +173,65 @@ header .logo:hover  {
     }
     
 }
+
+@media (max-width: 1000px) {
+
+    nav div ul li.btn a {
+        padding: 0.3em;
+    }
+
+    #IM {
+        width: 150px;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+
+    #foto_surgut {
+        width: 40vw;
+        position: relative;
+        float: left;
+        top: 45px;
+    }
+    
+    .foto_sgt {
+        width: 23vw;
+        margin: 1vw;
+        top: 20px;
+    }
+
+    .mytext {
+        
+    }
+
+    .foto_block {
+        width: auto;
+        height: 40vw;
+    }
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 8vw;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+    .mytext {
+        font-size: 3vw;
+    }
+    }
+
+    nav div ul li.btn a {
+        padding: 0.1em;
+    }
+
+    #IM {
+        width: 100px;
+    }
+
+    header {
+        height: 10px;
+    }
+}
